@@ -11,45 +11,45 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	arlo_tm_hamburger();
-	arlo_tm_imgtosvg();
-	arlo_tm_magnific_popup();
-	arlo_tm_jarallax();
-	arlo_tm_list_height();
-	arlo_tm_portfolio();
-	arlo_tm_anchor();
-	arlo_tm_contact_form();
-	arlo_tm_owl_carousel();
-	arlo_tm_animate_text();
-	arlo_tm_projects();
-	arlo_tm_miniboxes();
-	arlo_tm_isotope();
-	arlo_tm_totop();
-	arlo_tm_totop_myhide();
-	arlo_tm_popup_blog();
-	arlo_tm_popupscroll();
-	arlo_tm_about_animation();
-	arlo_tm_kenburn_slider();
-	arlo_tm_ripple();
-	arlo_tm_switcher();
-	arlo_tm_data_images();
+	jreid_tm_hamburger();
+	jreid_tm_imgtosvg();
+	jreid_tm_magnific_popup();
+	jreid_tm_jarallax();
+	jreid_tm_list_height();
+	jreid_tm_portfolio();
+	jreid_tm_anchor();
+	jreid_tm_contact_form();
+	jreid_tm_owl_carousel();
+	jreid_tm_animate_text();
+	jreid_tm_projects();
+	jreid_tm_miniboxes();
+	jreid_tm_isotope();
+	jreid_tm_totop();
+	jreid_tm_totop_myhide();
+	jreid_tm_popup_blog();
+	jreid_tm_popupscroll();
+	jreid_tm_about_animation();
+	jreid_tm_kenburn_slider();
+	jreid_tm_ripple();
+	jreid_tm_switcher();
+	jreid_tm_data_images();
 	
 	
 	jQuery(window).on('scroll',function(){
 		//e.preventDefault();
-		arlo_tm_totop_myhide();
+		jreid_tm_totop_myhide();
 		
 	});
 	
 	jQuery(window).on('resize',function(){
-		arlo_tm_miniboxes();
-		arlo_tm_isotope();
+		jreid_tm_miniboxes();
+		jreid_tm_isotope();
 		
 	});
 	
 	jQuery(window).load('body', function(){
 		setTimeout(function(){
-        jQuery('.arlo_tm_preloader').addClass('loaded');
+        jQuery('.jreid_tm_preloader').addClass('loaded');
     }, 1000);
 	});
 	
@@ -68,12 +68,12 @@ jQuery(document).ready(function(){
 // ---------------  HAMBURGER  -------------------------
 // -----------------------------------------------------
 
-function arlo_tm_hamburger(){
+function jreid_tm_hamburger(){
 	
 	"use strict";
 	
 	var hamburger 		= jQuery('.hamburger');
-	var mobileMenu		= jQuery('.arlo_tm_mobile_menu_wrap');
+	var mobileMenu		= jQuery('.jreid_tm_mobile_menu_wrap');
 	
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -89,7 +89,7 @@ function arlo_tm_hamburger(){
 	});
 }
 
-function arlo_tm_imgtosvg(){
+function jreid_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -123,7 +123,7 @@ function arlo_tm_imgtosvg(){
 // --------------    MAGNIFIC POPUP    -----------------
 // -----------------------------------------------------
 
-function arlo_tm_magnific_popup(){
+function jreid_tm_magnific_popup(){
 	
 	"use strict";
 	
@@ -170,7 +170,7 @@ function arlo_tm_magnific_popup(){
 // --------------------    JARALLAX    -----------------
 // -----------------------------------------------------
 
-function arlo_tm_jarallax(){
+function jreid_tm_jarallax(){
 	
 	"use strict";
 	
@@ -195,7 +195,7 @@ function arlo_tm_jarallax(){
 // ---------    PERSONAL LIST HEIGHT    ------------
 // -------------------------------------------------
 
-function arlo_tm_list_height(){
+function jreid_tm_list_height(){
 	
 	"use strict";
 	
@@ -212,15 +212,15 @@ function arlo_tm_list_height(){
 
 // filterable 
 
-function arlo_tm_portfolio(){
+function jreid_tm_portfolio(){
 
 	"use strict";
 
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var list 		 = jQuery('.arlo_tm_portfolio_list');
-		var filter		 = jQuery('.arlo_tm_portfolio_filter');
+		var list 		 = jQuery('.jreid_tm_portfolio_list');
+		var filter		 = jQuery('.jreid_tm_portfolio_filter');
 
 		if(filter.length){
 			// Isotope Filter 
@@ -247,25 +247,25 @@ function arlo_tm_portfolio(){
 	}
 }
 
-function arlo_tm_projects() {
+function jreid_tm_projects() {
 	
 	"use strict";
 	
-	jQuery('.arlo_tm_portfolio_animation_wrap').each(function() {
+	jQuery('.jreid_tm_portfolio_animation_wrap').each(function() {
 		jQuery(this).on('mouseenter', function() {
 			if (jQuery(this).data('title')) {
-				jQuery('.arlo_tm_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
-				jQuery('.arlo_tm_portfolio_titles').addClass('visible');
+				jQuery('.jreid_tm_portfolio_titles').html(jQuery(this).data('title') + '<span class="work__cat">' + jQuery(this).data('category') + '</span>');
+				jQuery('.jreid_tm_portfolio_titles').addClass('visible');
 			}
 
 			jQuery(document).on('mousemove', function(e) {
-				jQuery('.arlo_tm_portfolio_titles').css({
+				jQuery('.jreid_tm_portfolio_titles').css({
 					left: e.clientX - 10,
 					top: e.clientY + 25
 				});
 			});
 		}).on('mouseleave', function() {
-			jQuery('.arlo_tm_portfolio_titles').removeClass('visible');
+			jQuery('.jreid_tm_portfolio_titles').removeClass('visible');
 		});
 	});
 }
@@ -275,7 +275,7 @@ function arlo_tm_projects() {
 // ------------    ANCHOR NAVIGATION    ----------------
 // -----------------------------------------------------
 
-function arlo_tm_anchor(){
+function jreid_tm_anchor(){
 	
 	"use strict";
 	
@@ -300,7 +300,7 @@ function arlo_tm_anchor(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function arlo_tm_contact_form(){
+function jreid_tm_contact_form(){
 	
 	"use strict";
 	
@@ -346,11 +346,11 @@ function arlo_tm_contact_form(){
 // --------------------    OWL CAROUSEL    -------------
 // -----------------------------------------------------
 
-function arlo_tm_owl_carousel(){
+function jreid_tm_owl_carousel(){
 	
 	"use strict";
 	
-	var carousel			= jQuery('.arlo_tm_services_wrap .owl-carousel');
+	var carousel			= jQuery('.jreid_tm_services_wrap .owl-carousel');
   	carousel.owlCarousel({
 			loop: true,
 			items: 3,
@@ -373,18 +373,18 @@ function arlo_tm_owl_carousel(){
 		}
 	});
 	
-	jQuery('.arlo_tm_services_wrap .custom_nav > a.prev').on('click', function(){
+	jQuery('.jreid_tm_services_wrap .custom_nav > a.prev').on('click', function(){
 		carousel.trigger('prev.owl.carousel');
 		return false;
 	});
 	
-	jQuery('.arlo_tm_services_wrap .custom_nav > a.next').on('click', function(){
+	jQuery('.jreid_tm_services_wrap .custom_nav > a.next').on('click', function(){
 		carousel.trigger('next.owl.carousel');
 		return false;
 	});
-	arlo_tm_imgtosvg();
+	jreid_tm_imgtosvg();
 	
-	var carusel2			= jQuery('.arlo_tm_testimonial_wrap .owl-carousel');
+	var carusel2			= jQuery('.jreid_tm_testimonial_wrap .owl-carousel');
   	carusel2.owlCarousel({
 		loop:true,
 		autoplay:false,
@@ -408,17 +408,17 @@ function tdProgress(container){
 
 	"use strict";
 
-	container.find('.arlo_tm_progress').each(function(i) {
+	container.find('.jreid_tm_progress').each(function(i) {
 		var progress 		= jQuery(this);
 		var pValue 			= parseInt(progress.data('value'), 10);
 		var pColor			= progress.data('color');
-		var pBarWrap 		= progress.find('.arlo_tm_bar_wrap');
-		var pBar 			= progress.find('.arlo_tm_bar');
+		var pBarWrap 		= progress.find('.jreid_tm_bar_wrap');
+		var pBar 			= progress.find('.jreid_tm_bar');
 		pBar.css({width:pValue+'%', backgroundColor:pColor});
 		setTimeout(function(){pBarWrap.addClass('open');},(i*500));
 	});
 }
-jQuery('.arlo_tm_progress_wrap').each(function() {
+jQuery('.jreid_tm_progress_wrap').each(function() {
 	"use strict";
 	var pWrap 			= jQuery(this);
 	pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
@@ -428,16 +428,16 @@ jQuery('.arlo_tm_progress_wrap').each(function() {
 // -----------------    MINI BOXES    ------------------
 // -----------------------------------------------------
 
- function arlo_tm_miniboxes(){
+ function jreid_tm_miniboxes(){
 	 
   "use strict";
 	 
-  var el 			= jQuery('.arlo_tm_miniboxes');
+  var el 			= jQuery('.jreid_tm_miniboxes');
 	 
   if(el.length){
    el.each(function(index, element) {
          
-    var child		= jQuery(element).find('.arlo_tm_minibox');
+    var child		= jQuery(element).find('.jreid_tm_minibox');
     
     child.css({height:'auto'});
     // Get an array of all element heights
@@ -461,7 +461,7 @@ jQuery('.arlo_tm_progress_wrap').each(function() {
 // --------------    ISOTOPE MASONRY    ----------------
 // -----------------------------------------------------
 
-function arlo_tm_isotope(){
+function jreid_tm_isotope(){
 	
 	"use strict";
 	
@@ -477,22 +477,22 @@ function arlo_tm_isotope(){
 // --------------------    TOTOP    --------------------
 // -----------------------------------------------------
 
-function arlo_tm_totop(){
+function jreid_tm_totop(){
 	
 	"use strict";
 	
-	jQuery(".arlo_tm_totop").on('click', function(e) {
+	jQuery(".jreid_tm_totop").on('click', function(e) {
 		e.preventDefault();		
 		jQuery("html, body").animate({ scrollTop: 0 }, 'slow');
 		return false;
 	});
 }
 
-function arlo_tm_totop_myhide(){
+function jreid_tm_totop_myhide(){
 	
 	"use strict";
 	
-	var toTop		=jQuery(".arlo_tm_totop");
+	var toTop		=jQuery(".jreid_tm_totop");
 	if(toTop.length){
 		var topOffSet 	=toTop.offset().top;
 		
@@ -507,14 +507,14 @@ function arlo_tm_totop_myhide(){
 // -------------   ANIMATE TEXT  -------------------
 // -------------------------------------------------
 
-function arlo_tm_animate_text(){
+function jreid_tm_animate_text(){
 	
 	"use strict";
 	
-	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
+	var animateSpan			= jQuery('.jreid_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
+			strings: ["Student Web Developer", "Student UI/UX Designer", "Future Freelancer"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
@@ -525,10 +525,10 @@ function arlo_tm_animate_text(){
 // -------------------    POPUP BLOG    ----------------
 // -----------------------------------------------------
 
-function arlo_tm_popup_blog(){
+function jreid_tm_popup_blog(){
 	"use strict";
-	var li				= jQuery('.arlo_tm_list_wrap.blog_list .inner_list');
-	var popupBox		= jQuery('#arlo_tm_popup_blog');
+	var li				= jQuery('.jreid_tm_list_wrap.blog_list .inner_list');
+	var popupBox		= jQuery('#jreid_tm_popup_blog');
 	var popupInner		= popupBox.find('.inner_popup');
 	var closePopup		= popupBox.find('.close');
 	
@@ -563,14 +563,14 @@ function arlo_tm_popup_blog(){
 // -------------    WIDGET MENU SCROLL -----------------
 // -----------------------------------------------------
 
-function arlo_tm_popupscroll(){
+function jreid_tm_popupscroll(){
 	
 	"use strict";
 	
 	var H				= jQuery(window).height();
 	var scrollable		= jQuery('.scrollable');
 	
-	var popupBox		= jQuery('.arlo_tm_popup_blog .inner_popup');
+	var popupBox		= jQuery('.jreid_tm_popup_blog .inner_popup');
 	
 	popupBox.css({height:H-100});
 	
@@ -593,12 +593,12 @@ function arlo_tm_popupscroll(){
 // -------------  SLIDER KENBURN  ------------------
 // -------------------------------------------------
 
-function arlo_tm_kenburn_slider(){
+function jreid_tm_kenburn_slider(){
 	
 	"use strict";
 	
 		jQuery(function() {
-			jQuery('.arlo_tm_hero_header_wrap .overlay_slider').vegas({
+			jQuery('.jreid_tm_hero_header_wrap .overlay_slider').vegas({
 			timer:false,	
 			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
 			delay:7000,
@@ -617,7 +617,7 @@ function arlo_tm_kenburn_slider(){
 // -------------  RIPPLE  --------------------------
 // -------------------------------------------------
 
-function arlo_tm_ripple(){
+function jreid_tm_ripple(){
 	
 	"use strict";
 	
@@ -638,14 +638,14 @@ function arlo_tm_ripple(){
 // -----------------    SWITCHER    --------------------
 // -----------------------------------------------------
 
-function arlo_tm_switcher(){
+function jreid_tm_switcher(){
 	
 	"use strict";
 	
-	var switcherOpener				= jQuery('.arlo_tm_resize');
-	var switcherIcon				= jQuery('.arlo_tm_leftpart_wrap .arlo_tm_resize i');
-	var leftPart					= jQuery('.arlo_tm_leftpart_wrap');
-	var rightPart					= jQuery('.arlo_tm_rightpart');
+	var switcherOpener				= jQuery('.jreid_tm_resize');
+	var switcherIcon				= jQuery('.jreid_tm_leftpart_wrap .jreid_tm_resize i');
+	var leftPart					= jQuery('.jreid_tm_leftpart_wrap');
+	var rightPart					= jQuery('.jreid_tm_rightpart');
 	
 	switcherOpener.on('click',function(){
 		if(switcherOpener.hasClass('opened')){
@@ -665,7 +665,7 @@ function arlo_tm_switcher(){
 		
 		if(jQuery('.jarallax').length){
 			jQuery('.jarallax').jarallax('destroy');
-			setTimeout(function(){arlo_tm_jarallax();},300);
+			setTimeout(function(){jreid_tm_jarallax();},300);
 		
 		}
 		return false;
@@ -679,7 +679,7 @@ function arlo_tm_switcher(){
 // -------------------    COUNTER    -------------------
 // -----------------------------------------------------
 
-jQuery('.arlo_tm_counter').each(function() {
+jQuery('.jreid_tm_counter').each(function() {
 
 	"use strict";
 
@@ -703,7 +703,7 @@ jQuery('.arlo_tm_counter').each(function() {
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function arlo_tm_data_images(){
+function jreid_tm_data_images(){
 	
 	"use strict";
 	
@@ -720,7 +720,7 @@ function arlo_tm_data_images(){
 // -------------    PARALLAX ANIMATION    --------------
 // -----------------------------------------------------
 
-	function arlo_tm_about_animation(){
+	function jreid_tm_about_animation(){
 		
 		"use strict";
 		
