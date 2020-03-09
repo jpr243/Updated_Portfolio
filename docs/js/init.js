@@ -514,7 +514,7 @@ function jreid_tm_animate_text(){
 	var animateSpan			= jQuery('.jreid_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["Student Web Developer", "Student UI/UX Designer", "Future Freelancer", "Software Systems Implementation Specialist"],
+			strings: ["Front End Web Developer", "UI/UX Design Student", "Software Systems Implementation Specialist"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
